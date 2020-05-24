@@ -27,6 +27,7 @@ Good question, If you bought your computer recently, you may have come across th
 You can check if you're on Legacy or UEFI via **System Information**
 
 Press your **Windows** button and **R** together, this window will open
+
 ![run window](https://i.imgur.com/BmiHrPb.png)
 
 Type in: **msinfo32.exe**
