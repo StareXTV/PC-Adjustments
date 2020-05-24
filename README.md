@@ -87,14 +87,21 @@ Look for the folder you unzipped, if you unzipped it on your Desktop then the sy
 ![img](https://i.imgur.com/YtAsvys.png)
 
 ```bash
-cd .. - Backs out of a folder ```
+cd .. - Backs out of a folder 
+```
+
 ```bash 
-cd foldername - enters a foldername```
+cd foldername - enters a foldername
+```
+
 ```bash ls - views the content of the folder
 ```
 
 Go inside the scripts folder by typing cd .\scripts\
-Or type: cd C:\Windows\Users\YourUserName\Desktop\Debloat-Windows-10-master\scripts
+Or type: 
+```bash
+cd C:\Windows\Users\YourUserName\Desktop\Debloat-Windows-10-master\scripts
+```
 
 After you're inside the scripts folder, type the following commands to allow the scripts to perform the changes on your Windows 10:
 
