@@ -22,6 +22,8 @@ We recommend you use a USB Thumb drive and **format** it to **NTFS** and prepare
 
 Good question, If you bought your computer recently, you may have come across the word "UEFI" or "BIOS, Legacy". The main difference between **UEFI and Legacy** is the method of booting a computer, **UEFI (Using GUID Partition Table aka GPT)** is the latest method available and designed to replace BIOS and booting with the UEFI firmware, while **Legacy Boot (Using Master Boot Record)** is the process of booting the computer using BIOS firmware.
 
+UEFI gradually replaces traditional BIOS on most PCs, it includes greater security features than legacy and also boots faster, and noticeable performance improvement.
+
 ### Check if you're on Legacy or UEFI
 
 You can check if you're on Legacy or UEFI via **System Information**
@@ -35,12 +37,9 @@ Type in: **msinfo32.exe**
 Then look for **BIOS Mode**, there you'll see **UEFI** or **Legacy**.
 
 
+### How to setup UEFI Boot up for Windows 10?
 
-So the reason I'm telling you all of this is because **UEFI** gradually replaces traditional BIOS on most PCs, it includes **greater security features** than legacy and also **boots faster**, and noticeable **performance improvement**.
-
-**Alright, how do I set UEFI Boot up for Windows 10?**
-
-**You should not do this unless you're formatting your PC, you can look up ways to convert a drive from MBR to GPT online, we won't be dwelling into this because of complications that may occur. Do it at your own risk**
+Disclaimer: You should not do this unless you're formatting your PC, you can look up ways to convert a drive from MBR to GPT online, we won't be dwelling into this because of complications that may occur. Do it at your own risk
 
 Read here: [Convert my drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-installing-using-the-mbr-or-gpt-partition-style)
 
