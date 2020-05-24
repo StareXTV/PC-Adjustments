@@ -223,10 +223,10 @@ bcdedit /enum
 ```
 
 * Press **Windows Key + R** together launching the Run program, and type in **devmgmt.msc**
- * Inside Device Manager click on "View" and look for **Devices by connection**
- * Click "View" again and click on **Show Hidden Devices** 
- * Look for **High precision event timer** in the Devices list
- * Once you find HPET, Disable the device, for me it was inside **Microsoft ACPI-Compliant System -> PCI Express Root Complex**
+  * Inside Device Manager click on "View" and look for **Devices by connection**
+  * Click "View" again and click on **Show Hidden Devices** 
+  * Look for **High precision event timer** in the Devices list
+  * Once you find HPET, Disable the device, for me it was inside **Microsoft ACPI-Compliant System -> PCI Express Root Complex**
 Every system is different so enabling or disabling will maybe help or not change anything at all, it's said that if you have an older CPU, then it might not benefit you to disable it, if you own a very fast CPU then you might see 10fps or more improvement when it's disabled.
 
 **You must reboot after applying this setting, but can continue with ISLC down below**
