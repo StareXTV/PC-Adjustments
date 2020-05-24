@@ -61,9 +61,9 @@ And then go inside the **Boot** section of your motherboard, there you'll see yo
 
 
 
-## After setting up Windows 10, Debloating & Programs
+# After setting up Windows 10, Debloating & Programs
 
-#### **Installing Programs that we want**
+## **Installing Programs that we want**
 
 After setting up our Windows 10, we can now go to a really handy dandy website called Ninite, this site will give us a plethora of programs updated to their latest version without installing them one by one, it'll do it all for us.
 
