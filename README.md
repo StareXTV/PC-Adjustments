@@ -47,15 +47,14 @@ When you restart/start your computer you will be greeted with your **Motherboard
 
 **Enter your BIOS, Pressing the DEL button OR F1, F2, F10, Esc, or in really older machines Ctrl+Alt+Esc or Ctrl+Alt+Delete**
 
-Make sure you have "CSM Support" (Stands for Compatibility Support Module) disabled * **Can improve booting times too**
-
-And then go inside the **Boot** section of your motherboard, there you'll see your USB thumb drive.
-
-Make sure you select the "UEFI: USB Thumb drive name" and not something like "P1: USB Thumb drive name" and begin installing Windows 10.
-
-
-**In the Windows 10 Installation, make sure you Delete the partition you want to install Windows on, recommended on an [SSD](https://www.youtube.com/watch?v=YQEjGKYXjw8) then "New" and let it work, proceed to install Windows 10 on this partition after it's done.**
-
+* Make sure you have "CSM Support" (Stands for Compatibility Support Module) disabled
+* Enter the **Boot** menu of your motherboard, there you'll see your USB thumb drive.
+* Select "UEFI: USB Thumb drive name" and not something like "P1: USB Thumb drive name" as Boot Priority 1
+* Save and Exit
+* Install Windows 10 the traditional way
+  * In the Installation, make sure you **Delete** the partition you want to install Windows on, recommended on an [SSD](https://www.youtube.com/watch?v=YQEjGKYXjw8)
+  * Press "New" and set it to max capacity
+  * Install Windows 10 on the largest partition that has been created and not System Reserved, MBR or Recovery partitions.
 # After setting up Windows 10, Debloating & Programs
 
 ## Installing Programs that we want
