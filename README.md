@@ -81,7 +81,9 @@ Make sure you press on Clone or download, then "Download ZIP"
 
 Unzip what you download and place it in a convenient folder we can easily access, I recommend the Desktop.
 
-**Run PowerShell as an admin**, Right-click on the start menu Windows logo and click on "Windows Powershell (Admin)", if you can't find it, launch **Run** (Explained above) and type powershell.exe, press Ctrl+Shift and hit the Ok button, a UAC prompt will appear
+```python
+Run PowerShell as an admin
+```
 
 Look for the folder you unzipped, if you unzipped it on your Desktop then the syntax is:
 ![img](https://i.imgur.com/YtAsvys.png)
