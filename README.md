@@ -178,7 +178,7 @@ https://www.amd.com/en/support
 
 # SYSTEM Optimizations
 
-The system optimization section is where it's all about, from troubleshooting and solving "Out of Memory" errors, to system instabilities, to unparking your CPU cores, overclocking, and a few other tweaks and fixes.
+The system optimization section is where it's all about, from troubleshooting and solving "Out of Memory" errors, to system instabilities, to unparking your CPU cores, and a few other tweaks and fixes.
 
 
 
