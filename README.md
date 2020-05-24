@@ -1,10 +1,10 @@
 ##### Performance & Latency Optimization & System tweaks - Provided by StareX
 
-## What is this guide all about?
+# What is this guide all about?
 
 It's a handbook filled with **tweaks, system optimizations and performance & latency improvements** to achieve optimal performance and squeeze out every last bit of your hardware capabilities without harming them in an easy to read format.
 
-## Getting to business, Windows 10 Setup + UEFI vs Legacy
+# Getting to business, Windows 10 Setup + UEFI vs Legacy
 
 **Disclaimer**: You can skip this process, this is a **RECOMMENDED** process but it's not a **Mandatory** one.
 
@@ -69,7 +69,7 @@ After setting up our Windows 10, we can now go to a really handy dandy website c
 
 https://ninite.com/
 
-#### **Debloating Windows 10 for smooth experience**
+## **Debloating Windows 10 for smooth experience**
 
 After that we can move on to debloating Windows 10 by running a few scripts, **This will debloat/remove programs like Overdrive, Windows Defender, optimize user interface, provide Mouse Fixes and other.**
 
@@ -120,13 +120,13 @@ Go inside **HKEY_LOCAL_MACHINE -> SOFTWARE -> Microsoft -> Windows NT -> Current
 In there you'll find "**EnableMtcUvc**" set to **0**, set it to **1** by changing the value and press OK, it will automatically revert you to the modern look of the volume slider.
 ![img](https://i.imgur.com/JBpI9hI.png)
 
-#### Important drivers, and latest ones
+## Important drivers, and latest ones
 
 Ever wondered where to get the latest Realtek driver or a WiFi driver, click here: https://www.station-drivers.com/
 
 And you can look for them in here.
 
-#### Windows Privacy Settings Tweaks - Shutup 10!  Antispy Tool By O&O
+## Windows Privacy Settings Tweaks - Shutup 10!  Antispy Tool By O&O
 
 I don't like my OS sending information about what I do to an outside source, it doesn't matter to who or for what cause, luckily there are few ways to intercept this and disable telemetry and other background apps that run in that might run in the background from Windows 10.
 
@@ -165,13 +165,13 @@ https://www.amd.com/en/support
 
 
 
-## SYSTEM Optimizations
+# SYSTEM Optimizations
 
 The system optimization section is where it's all about, from troubleshooting and solving "Out of Memory" errors, to system instabilities, to unparking your CPU cores, overclocking, and a few other tweaks and fixes.
 
 
 
-### msi Mode
+## msi Mode
 
 Not to be confused with the company MSI, MSI stands for "**M**essage **S**ignaled-Based **I**nterrupts".
 
@@ -189,13 +189,13 @@ Look for your GPU, for you it'll be unticked and the IRQ will be a positive numb
 
 Restart your PC and you're done. To validate if you are running MSI mode on your GPU, open the program again and see if IRQ is in a negative number or a different number than what it was previously.
 
-### AntiVirus
+## AntiVirus
 
 I recommend against using Antivirus software as it impacts over around 3% performance loss such as launching apps and boot times, More in [LinusTechTips video](https://www.youtube.com/watch?v=pzeKPiwEfXk) explaining and showing benchmarks.
 
 To uninstall any Antivirus software you have, I will provide you with a solution that will disinfect and clean up your PC thoroughly without having to worry about having an Antivirus in the background tempering with our PC.
 
-### Disabling High Precision Event Timer
+## Disabling High Precision Event Timer
 
 Open CMD as an admin and type
 
@@ -213,7 +213,7 @@ Every system is different so enabling or disabling will maybe help or not change
 
 **You must reboot after applying this setting, but can continue with ISLC down below**
 
-### Intelligent Standby List Cleaner - Helps reduce stuttering in games
+## Intelligent Standby List Cleaner - Helps reduce stuttering in games
 
 This will improve latency and memory allocation, it's designed to clean standby RAM that is gathered throughout a gaming or program session, we can clean this standby list to free up RAM, this will help reduce stuttering in games.
 
@@ -246,7 +246,7 @@ It should look like this at the end.
 
 **You must reboot after applying this setting to achieve the 0.5ms Current and Maximum timer resolution**.
 
-### CPU Un-parking - Bitsum Park Control (Not recommended for laptops as this will use more energy)
+## CPU Un-parking - Bitsum Park Control (Not recommended for laptops as this will use more energy)
 
 Unparks your CPU so you'll use more of it than half of it as Windows is parking cores to save in energy, this decreases performance and we don't want that. You can comfortably use their **Bitsum High-Performance** configuration inside the program.
 
@@ -255,7 +255,7 @@ Download here: https://bitsum.com/parkcontrol/
 
 Hit "Apply" when doing changes and "Make Active" to apply the power plan.
 
-### Windows 10 Game Mode
+## Windows 10 Game Mode
 
 Microsoft introduced "Game Mode" with Windows 10 creators update, which is meant to help optimize your PC's gaming performance, you can use it if you don't want to be bothered by anything Windows-related like Windows Update (even though we tweaked it when applying the Debloater scripts)
 
@@ -264,7 +264,7 @@ Though, it has been reported in various places that this optimization can be hur
 **Disable it to gain stability**
 <img src="https://i.imgur.com/o9QataP.png" alt="img" style="zoom:50%;" />
 
-### NVIDIA Inspector and CUDA P2 State (For NVIDIA Only)
+## NVIDIA Inspector and CUDA P2 State (For NVIDIA Only)
 
 NVIDIA Inspector is an application that reads out driver and hardware information for NVIDIA cards, it also allows you to tinker with settings that are not present in the NVIDIA Control Panel.
 
@@ -332,7 +332,7 @@ Additional settings that might help with Visuals and performance are the followi
 
 After you're done applying these settings, hit "Apply Changes" at the top right corner, and save the profile (You'll see an icon of an arrow pointing upwards, click on "Export Profile" and save it where you can Import it when you update your drivers)
 
-### Setting Affinity for NVIDIA Drivers to improve latency
+## Setting Affinity for NVIDIA Drivers to improve latency
 
 Windows uses almost every driver including GPU drivers to Core 0 on your computer, you can gradually improve latency making your mouse and tasks feel snappier by assigning your GPU to the 4th Core if you have an 8 cores system, or to the 4th core if you have a 4 cores system, or if you have 8 and 16 threads core system then the 5th core (8 and 9).
 
@@ -350,7 +350,7 @@ Now press OK and OK when it asks you to restart the device, your monitor will go
 
 This alone improved my latency by a lot!
 
-### Enabling XMP Profile
+## Enabling XMP Profile
 
 XMP stands for "Extreme Memory Profiles", it's an Intel technology that allows you to change the memory settings to the manufacturer Overclocked settings to run your RAM at its optimal performance.
 
@@ -363,7 +363,7 @@ To Enable XMP profile go into your BIOS settings and inside your Memory Settings
 
 And you're done! Save and Exit :)
 
-### Pagefile setup - Helps with "Running out of Memory"
+## Pagefile setup - Helps with "Running out of Memory"
 
 To put it short, it's a way to provide your computer to perform smoothly by reducing the workload of the physical memory, so at times when you have "running out of memory", then it's maybe because of Pagefile, you can read more about it online but we're going to just simplify it.
 
@@ -385,7 +385,7 @@ untick "**Automatically manage paging file size for all drivers**", and set your
 
 Press OK, and restart your PC to take effect.
 
-### TRONScript
+## TRONScript
 
 First of all, I fell in love with this project and all credits to its makers, you can read about it more in their Reddit page here:
 
@@ -399,7 +399,7 @@ Sounds good? **Remember, running it will take time when it starts you need to le
 
 
 
-### Startup Programs - Helps with booting times 
+## Startup Programs - Helps with booting times 
 
 Yeah, you could go inside your Task Manager and then "Startup" and disable all startup programs that you don't need, but there are also a few regedit settings you can do, as an Advanced to cease startup programs that might not appear in the "Startup" tab of Task Manager.
 
@@ -429,7 +429,7 @@ It's not mandatory, but why not?.
 
 
 
-## Grand Finale
+# Grand Finale
 
 That's it!
 
