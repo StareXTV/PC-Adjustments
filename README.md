@@ -18,11 +18,11 @@ We recommend you use a USB Thumb drive and **format** it to **NTFS** and prepare
 
 [What is the difference? 34bit vs 64bit](https://www.pcmag.com/news/32-bit-vs-64-bit-oses-whats-the-difference)
 
-## Now wait for a second, why would I even read about Windows 10 setup in a performance guide?
+#### Now wait for a second, why would I even read about Windows 10 setup in a performance guide?
 
 Good question, If you bought your computer recently, you may have come across the word "UEFI" or "BIOS, Legacy". The main difference between **UEFI and Legacy** is the method of booting a computer, **UEFI (Using GUID Partition Table aka GPT)** is the latest method available and designed to replace BIOS and booting with the UEFI firmware, while **Legacy Boot (Using Master Boot Record)** is the process of booting the computer using BIOS firmware.
 
-#### Alright alright, how do I even check if I'm on Legacy or UEFI before I boot?
+### Alright alright, how do I even check if I'm on Legacy or UEFI before I boot?
 
 You can check if you're on Legacy or UEFI via **System Information**
 
