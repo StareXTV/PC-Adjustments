@@ -87,9 +87,10 @@ Look for the folder you unzipped, if you unzipped it on your Desktop then the sy
 ![img](https://i.imgur.com/YtAsvys.png)
 
 ```bash
-cd .. - Backs out of a folder
-cd foldername - enters a foldername
-ls - views the content of the folder
+cd .. - Backs out of a folder ```
+```bash 
+cd foldername - enters a foldername```
+```bash ls - views the content of the folder
 ```
 
 Go inside the scripts folder by typing cd .\scripts\
