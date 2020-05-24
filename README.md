@@ -227,6 +227,7 @@ bcdedit /enum
   * Click "View" again and click on **Show Hidden Devices** 
   * Look for **High precision event timer** in the Devices list
   * Once you find HPET, Disable the device, for me it was inside **Microsoft ACPI-Compliant System -> PCI Express Root Complex**
+  
 Every system is different so enabling or disabling will maybe help or not change anything at all, it's said that if you have an older CPU, then it might not benefit you to disable it, if you own a very fast CPU then you might see 10fps or more improvement when it's disabled.
 
 **You must reboot after applying this setting, but can continue with ISLC down below**
@@ -235,44 +236,37 @@ Every system is different so enabling or disabling will maybe help or not change
 
 This will improve latency and memory allocation, it's designed to clean standby RAM that is gathered throughout a gaming or program session, we can clean this standby list to free up RAM, this will help reduce stuttering in games.
 
-First, open CMD as an admin and type this:
-
+* Open CMD as an Admin and type:
 ```bash
 bcdedit /set useplatformtick yes
 ```
-
-Then download and unzip the following: 
-
+  * Download and unzip this: 
 https://www.wagnardsoft.com/forums/viewtopic.php?t=1256
 
-When opening the program, tick "**Start ISLC Minimized**" and "**Launch ISLC on user logon**" and "**Enable custom timer resolution**".
+* Open ISLC and tick both "**Start ISLC Minimized**" and "**Launch ISLC on user logon**" and "**Enable custom timer resolution**"
+* Set the **Wanted timer resolution** to **0.50**, Set **ISLC polling Rate** (ms) to **1000**
+* Set **The list size is at least:** 1024 MB
+* Set **Free memory is lower than**: Divide your memory by 2
+  * 4GB is 4096 so lower than **2048**
+  * 8GB is 8192 so lower than **4096**
+  * 16GB is 16384 so lower than **8192**
+* Click "**Start**" and minimize it, let it run in the background and do its thing.
 
-Set the **Wanted timer resolution** to **0.50**, Set **ISLC polling Rate** (ms) to **1000**
-
-Set **The list size is at least:** 1024 MB
-
-Set **Free memory is lower than**: Divide your memory by 2
-
-- 4GB is 4096 so lower than **2048**
-
-- 8GB is 8192 so lower than **4096**
-
-- 16GB is 16384 so lower than **8192**
-
-Hit "**Start**" and minimize it, let it run in the background and do its thing.
+**Should look like this at the end.**
 ![img](https://i.imgur.com/AXdU89H.png)
-
-It should look like this at the end.
-
 **You must reboot after applying this setting to achieve the 0.5ms Current and Maximum timer resolution**.
 
 ## CPU Un-parking - Bitsum Park Control (Not recommended for laptops as this will use more energy)
 
 Unparks your CPU so you'll use more of it than half of it as Windows is parking cores to save in energy, this decreases performance and we don't want that. You can comfortably use their **Bitsum High-Performance** configuration inside the program.
 
-Download here: https://bitsum.com/parkcontrol/
+* Download here: https://bitsum.com/parkcontrol/
 ![img](https://i.imgur.com/lEr0wqo.png)
 
+* Set Parking AC as Disabled and at 100%
+* Set Parking DC as Disabled and at 100%
+* Set Freq Scaling AC as Disabled at 100%
+* Set Freq Scaling DC as Disabled at 100%
 Hit "Apply" when doing changes and "Make Active" to apply the power plan.
 
 ## Windows 10 Game Mode
@@ -290,49 +284,36 @@ NVIDIA Inspector is an application that reads out driver and hardware informatio
 
 What we are going to do in this section is disable CUDA P2 State, it's practically a Power saving feature for CUDA compute workloads for rendering, deep learning, mining, etc. **In result, it lowers memory clock accordingly** to save on energy, this causes instability in some cases.
 
-Download it from here: https://github.com/Orbmu2k/nvidiaProfileInspector/releases
-
-Once downloaded, unzip the file somewhere in your computer and launch the program as an Admin.
-
+* Download it from here: https://github.com/Orbmu2k/nvidiaProfileInspector/releases
+* Once downloaded, unzip the file somewhere in your computer and launch the program as an Admin.
 You'll be greeted with a bunch of settings, some of them will be familiar for you as it draws the data from your 3D Managed Settings, but with greater control.
-
 I'm not going to go through every single function and what it does but only what I found that is worth enabling and disabling to provide a smooth experience.
 
 **If you have OC'd your memory, do it from scratch because after doing this modification your compute workloads will use the maximum memory clock from the P0 State.**
 
 **Disabling CUDA P2 State**:
-
-To turn it off, launch NVIDIA Inspector and scroll down to Common ("Section 5"), CUDA - Force P2 State, it'll be "On", turn if "Off".
+* Scroll down to "Common"
+* Find "CUDA - Force P2 State" and turn it off.
 ![img](https://i.imgur.com/zMEmqJn.png)
 
 Additional settings that might help with Visuals and performance are the following:
 
 #### For GSYNC / Freesync / Adaptive Sync users:
 
-**Frame Rate Limiter Mode:** Limiter V2 - Force Off [Enables Limiter V1 (Less Input Lag)]
-
-**GSYNC - Application Mode**: Fullscreen Only
-
-**GSYNC - Application State**: Allow
-
-**GSYNC - Global Feature**: On
-
-**GSYNC - Global Mode**: Fullscreen Only
-
-**Prefered Refreshrate**: Highest Available
-
-**Vertical Sync**: Force on
-
-**Anisotropic filtering mode** - User-defined / Off
-
-**Anisotropic filtering setting** - 16x
-
-**Power Management Mode** - Prefer Maximum Performance
-
-**Threaded Optimization** - On
-
-* Make sure to go into your NVIDIA Control Panel and enable "Low Latency Mode" to Ultra after applying these changes.
-  \* After applying these settings make sure you have also enabled an FPS Limiter -3 off your Refresh Rate, so if you have a 144Hz GSYNC Display, put 141fps in your limiter. Riva-Tuner Statistics Server is recommended. (Not one that is inside your game)
+* **Frame Rate Limiter Mode:** Limiter V2 - Force Off [Enables Limiter V1 (Less Input Lag)]
+* **GSYNC - Application Mode**: Fullscreen Only
+* **GSYNC - Application State**: Allow
+* **GSYNC - Global Feature**: On
+* **GSYNC - Global Mode**: Fullscreen Only
+* **Prefered Refreshrate**: Highest Available
+* **Vertical Sync**: Force on
+* **Anisotropic filtering mode** - User-defined / Off
+* **Anisotropic filtering setting** - 16x
+* **Power Management Mode** - Prefer Maximum Performance
+* **Threaded Optimization** - On
+  * Make sure to go into your NVIDIA Control Panel and enable "Low Latency Mode" to Ultra after applying these changes.
+* After applying these settings make sure you have also enabled an FPS Limiter -3 off your Refresh Rate.
+* So if you have a 144Hz GSYNC Display put 141fps in your limiter. (Riva-Tuner Statistics Server is recommended)
 
 #### For non-GSYNC/Adaptive sync/Freesync users:
 
