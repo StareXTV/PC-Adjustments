@@ -375,9 +375,11 @@ To enter this, right-click on "This PC" and then "Properties"
 Press on "Advanced System Settings" and then "Advanced"
 
 Under "Performance" click on "Settings"
+
 ![img](https://i.imgur.com/sJbALXM.png)
 
-After you're inside Performance options, click on "Advanced" again and then "Virtual Memory"![img](https://i.imgur.com/o890eLm.png)
+After you're inside Performance options, click on "Advanced" again and then "Virtual Memory"
+![img](https://i.imgur.com/o890eLm.png)
 
 untick "**Automatically manage paging file size for all drivers**", and set your **SSD Main drive** or HDD to **System Managed**, and your Gaming drive to **No paging file**.
 
