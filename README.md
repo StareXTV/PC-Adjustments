@@ -63,13 +63,13 @@ And then go inside the **Boot** section of your motherboard, there you'll see yo
 
 # After setting up Windows 10, Debloating & Programs
 
-## **Installing Programs that we want**
+## Installing Programs that we want
 
 After setting up our Windows 10, we can now go to a really handy dandy website called Ninite, this site will give us a plethora of programs updated to their latest version without installing them one by one, it'll do it all for us.
 
 https://ninite.com/
 
-## **Debloating Windows 10 for smooth experience**
+## Debloating Windows 10 for smooth experience
 
 After that we can move on to debloating Windows 10 by running a few scripts, **This will debloat/remove programs like Overdrive, Windows Defender, optimize user interface, provide Mouse Fixes and other.**
 
@@ -86,13 +86,13 @@ Unzip what you download and place it in a convenient folder we can easily access
 Look for the folder you unzipped, if you unzipped it on your Desktop then the syntax is:
 ![img](https://i.imgur.com/YtAsvys.png)
 
-**cd ..** - Backs out of a folder
+```bash
+cd .. - Backs out of a folder
+cd foldername - enters a foldername
+ls - views the content of the folder
+```
 
-**cd foldername** - enters a foldername
-
-**ls** - views the content of the folder
-
-**Go inside the scripts folder by typing cd .\scripts\ **
+Go inside the scripts folder by typing cd .\scripts\
 Or type: cd C:\Windows\Users\YourUserName\Desktop\Debloat-Windows-10-master\scripts
 
 After you're inside the scripts folder, type the following commands to allow the scripts to perform the changes on your Windows 10:
