@@ -5,20 +5,19 @@
 It's a handbook filled with **tweaks, system optimizations and performance & latency improvements** to achieve optimal performance and squeeze out every last bit of your hardware capabilities without harming them in an easy to read format.
 
 # Getting to business, Windows 10 Setup + UEFI vs Legacy
-
 **Disclaimer**: You can skip this process, this is a **RECOMMENDED** process but it's not a **Mandatory** one.
 
+## Installing Windows 10 Pro
 The recommended method to install Windows 10 is via the Microsoft website, avoid downloading any Win10 downloads off torrents or other websites as they might contain malware.
 
 [Download the Media Tool Creation](https://www.microsoft.com/en-us/software-download/windows10)
-
 Press **Download tool now**, and run the installation media.
 
 We recommend you use a USB Thumb drive and **format** it to **NTFS** and prepare it with the installation files, select to prepare a Windows 10 **Pro** 64bit - **We recommend running 64bit for users that have over 4GB of RAM, otherwise select 32bit if your PC is older than the year 2000**
 
 [What is the difference? 34bit vs 64bit](https://www.pcmag.com/news/32-bit-vs-64-bit-oses-whats-the-difference)
 
-#### Now wait for a second, why would I even read about Windows 10 setup in a performance guide?
+## Now wait for a second, why would I even read about Windows 10 setup in a performance guide?
 
 Good question, If you bought your computer recently, you may have come across the word "UEFI" or "BIOS, Legacy". The main difference between **UEFI and Legacy** is the method of booting a computer, **UEFI (Using GUID Partition Table aka GPT)** is the latest method available and designed to replace BIOS and booting with the UEFI firmware, while **Legacy Boot (Using Master Boot Record)** is the process of booting the computer using BIOS firmware.
 
