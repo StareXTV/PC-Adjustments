@@ -87,22 +87,20 @@ Look for the folder you unzipped, if you unzipped it on your Desktop then the sy
 ```bash
 cd .. - Backs out of a folder 
 ```
-
 ```bash 
 cd foldername - enters a foldername
 ```
-
 ```bash
 ls - views the content of the folder
 ```
 
-Go inside the scripts folder by typing cd .\scripts\
+Enter the scripts folder by typing: cd .\scripts\ when inside the Debloat folder
 Or type: 
 ```bash
 cd C:\Windows\Users\YourUserName\Desktop\Debloat-Windows-10-master\scripts
 ```
 
-After you're inside the scripts folder, type the following commands to allow the scripts to perform the changes on your Windows 10:
+Once inside the scripts folder, type the following:
 
 ```bash
 PS > Set-ExecutionPolicy Unrestricted
@@ -114,10 +112,10 @@ PS > ls -Recurse *.ps1 | Unblock-File
 PS > ls -Recurse *.psm1 | Unblock-File
 ```
 
-type **ls** to see the list of the script files, now to run the scripts, type the name of the script and hit TAB to autocomplete it, it will look like this:
+type **ls** to see the list of the script files, you will see 9 script files, run all of them by typing .\scriptname, Hitting TAB will autocomplete the filename for you.
 Example: .\disable-services.ps1
 
-Run all 9 of them and let them run.
+Run all 9 of them.
 
 **DO NOT disable Overdrive if you use it**
 
