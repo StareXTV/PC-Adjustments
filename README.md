@@ -342,10 +342,11 @@ Download Here: https://drive.google.com/file/d/11wY-o8Q8SB1awuQWjHamC7uJMLH63tr2
   * Core 0 & 1 are the first **core**
   * Core 2 and 3 are the **2nd core**
   * Core 4 and 5 are the **3rd core**
-  * Core 6 and 7 are the 4th **core**
-  * Core 8 and 9 are the 5th **core** and so on
+  * Core 6 and 7 are the **4th core**
+  * Core 8 and 9 are the **5th core** and so on
   (**IF Hyper-Threading is Enabled, if Disabled then Core 0 is 1, Core 1 is 2 and etc**)
 * It will ask you to restart your device, press OK, your monitor will go black and then you'll see your screen again.
+
 **This alone improved my latency by a lot!**
 
 ## Enabling XMP Profile
@@ -367,21 +368,17 @@ To put it short, it's a way to provide your computer to perform smoothly by redu
 
 If you have an SSD and an HDD or SSD with an SSD, make sure Local C is set to "System Managed" and your HDD to "No Paging file"
 
-
-
-To enter this, right-click on "This PC" and then "Properties"
-Press on "Advanced System Settings" and then "Advanced"
-
-Under "Performance" click on "Settings"
-
+* Right-click on "This PC" and then "Properties"
+* Press on "Advanced System Settings" and then "Advanced"
+* Under "Performance" click on "Settings"
 ![img](https://i.imgur.com/sJbALXM.png)
-
-After you're inside Performance options, click on "Advanced" again and then "Virtual Memory"
+* After you're inside Performance options, click on "Advanced" again and then "Virtual Memory"
 ![img](https://i.imgur.com/o890eLm.png)
 
-untick "**Automatically manage paging file size for all drivers**", and set your **SSD Main drive** or HDD to **System Managed**, and your Gaming drive to **No paging file**.
-
-Press OK, and restart your PC to take effect.
+* Untick "**Automatically manage paging file size for all drivers**"
+* set your **SSD Main drive** or HDD to **System Managed**
+* Set your Gaming drive to **No paging file**.
+* Press OK, and restart your PC to take effect.
 
 ## TRONScript
 
@@ -398,12 +395,10 @@ Sounds good? **Remember, running it will take time when it starts you need to le
 
 
 ## Startup Programs - Helps with booting times 
-
 Yeah, you could go inside your Task Manager and then "Startup" and disable all startup programs that you don't need, but there are also a few regedit settings you can do, as an Advanced to cease startup programs that might not appear in the "Startup" tab of Task Manager.
 
-
-
-**Remember to EXPORT your regedit BEFORE changing these settings to revert mistakes, Click on "File" and then Export**
+> **Remember to EXPORT your regedit BEFORE changing these settings to revert mistakes
+> Click on "File" and then Export**
 
 Startup Contains inside:
 
