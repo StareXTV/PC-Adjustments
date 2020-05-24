@@ -5,7 +5,7 @@
 It's a handbook filled with **tweaks, system optimizations and performance & latency improvements** to achieve optimal performance and squeeze out every last bit of your hardware capabilities without harming them in an easy to read format.
 
 # Getting to business, Windows 10 Setup + UEFI vs Legacy
-**Disclaimer**: You can skip this process, this is a **RECOMMENDED** process but it's not a **Mandatory** one.
+> Disclaimer: You can skip this process, this is a **RECOMMENDED** process but it's not a **Mandatory** one.
 
 ## Installing Windows 10 Pro
 The recommended method to install Windows 10 is via the Microsoft website, avoid downloading any Win10 downloads off torrents or other websites as they might contain malware.
