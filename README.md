@@ -371,8 +371,10 @@ If you have an SSD and an HDD or SSD with an SSD, make sure Local C is set to "S
 * Right-click on "This PC" and then "Properties"
 * Press on "Advanced System Settings" and then "Advanced"
 * Under "Performance" click on "Settings"
+
 ![img](https://i.imgur.com/sJbALXM.png)
 * After you're inside Performance options, click on "Advanced" again and then "Virtual Memory"
+
 ![img](https://i.imgur.com/o890eLm.png)
 
 * Untick "**Automatically manage paging file size for all drivers**"
@@ -397,8 +399,7 @@ Sounds good? **Remember, running it will take time when it starts you need to le
 ## Startup Programs - Helps with booting times 
 Yeah, you could go inside your Task Manager and then "Startup" and disable all startup programs that you don't need, but there are also a few regedit settings you can do, as an Advanced to cease startup programs that might not appear in the "Startup" tab of Task Manager.
 
-> **Remember to EXPORT your regedit BEFORE changing these settings to revert mistakes
-> Click on "File" and then Export**
+> **Remember to EXPORT your regedit BEFORE changing these settings to revert mistakes, Click on "File" and then Export**
 
 Startup Contains inside:
 
