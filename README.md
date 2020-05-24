@@ -104,20 +104,26 @@ cd C:\Windows\Users\YourUserName\Desktop\Debloat-Windows-10-master\scripts
 
 After you're inside the scripts folder, type the following commands to allow the scripts to perform the changes on your Windows 10:
 
-**"Set-ExecutionPolicy Unrestricted"** Without the quotations - Agree to the prompt
-**ls -Recurse *.ps1 | Unblock-File**
-**ls -Recurse *.psm1 | Unblock-File**
+```bash
+PS > Set-ExecutionPolicy Unrestricted
+```
+```bash
+PS > ls -Recurse *.ps1 | Unblock-File
+```
+```bash
+PS > ls -Recurse *.psm1 | Unblock-File
+```
 
 type **ls** to see the list of the script files, now to run the scripts, type the name of the script and hit TAB to autocomplete it, it will look like this:
 Example: .\disable-services.ps1
 
 Run all 9 of them and let them run.
 
-**Don't disable Overdrive if you use it**
+**DO NOT disable Overdrive if you use it**
 
 **We're done! Debloat is complete, now I'd want to show you more ways you can do to optimize Windows 10**
 
-#### Oh wait, my modern metro looking volume slider is missing! what happened?
+## Oh wait, my modern metro looking volume slider is missing! what happened?
 
 That's alright, it's because of the interface optimization script, we can revert these changes by going into the Regedit, it just replaced the modern look to the Windows 7 style slider.
 
