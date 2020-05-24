@@ -65,6 +65,7 @@ https://ninite.com/
 
 ## Debloating Windows 10 for smooth experience
 > Recommended step for optimal performance
+
 After that we can move on to debloating Windows 10 by running a few scripts, **This will debloat/remove programs like Overdrive, Windows Defender, optimize user interface, provide Mouse Fixes and other.**
 
 https://github.com/W4RH4WK/Debloat-Windows-10
@@ -131,12 +132,14 @@ In there you'll find "**EnableMtcUvc**" set to **0**, set it to **1** by changin
 
 ## Important drivers, and latest ones
 > Recommended step for optimal performance
+
 Ever wondered where to get the latest Realtek driver or a WiFi driver, click here: https://www.station-drivers.com/
 
 And you can look for them in here.
 
 ## Windows Privacy Settings Tweaks - Shutup 10!  Antispy Tool By O&O
 > Recommended step for optimal performance
+
 I don't like my OS sending information about what I do to an outside source, it doesn't matter to who or for what cause, luckily there are few ways to intercept this and disable telemetry and other background apps that run in that might run in the background from Windows 10.
 
 Luckily there's a handy tool that does it all for us, and we don't need to go into the "Windows Privacy" settings and manually toggle sliders on or off, it does it all for us.
@@ -153,6 +156,7 @@ You can toy around with this software, it's pretty cool!
 
 ## Moving on, NVIDIA/AMD Drivers - Important
 > Recommended and probably a Mandatory step for optimal performance
+
 The next step is to **correctly** install NVIDIA/AMD drivers.
 
 Install the latest version of [Display Driver Uninstaller](https://www.guru3d.com/files-details/display-driver-uninstaller-download.html) in The Guru3D website.
@@ -176,10 +180,12 @@ https://www.amd.com/en/support
 
 # SYSTEM Optimizations
 > Recommended steps for optimal performance, read through everything in order.
+
 The system optimization section is where it's all about, from troubleshooting and solving "Out of Memory" errors, to system instabilities, to unparking your CPU cores, and a few other tweaks and fixes.
 
 ## msi Mode
 > Super Recommended step for optimal performance!
+
 Not to be confused with the company MSI, MSI stands for "**M**essage **S**ignaled-Based **I**nterrupts".
 The MSI mode allows your PCI devices to communicate better with your CPU and vice versa such as your GPU.
 We are strictly going to talk about your GPU now because this is what we'd want to improve the latency on.
@@ -196,13 +202,13 @@ You can read more about it in Guru3D Forums, explained by a user named mbk1969 [
 Restart your PC and you're done. To validate if you are running MSI mode on your GPU, open the program again and see if IRQ is in a negative number or a different number than what it was previously.
 
 ## AntiVirus
-
 I recommend against using Antivirus software as it impacts over around 3% performance loss such as launching apps and boot times, More in [LinusTechTips video](https://www.youtube.com/watch?v=pzeKPiwEfXk) explaining and showing benchmarks.
 
 To uninstall any Antivirus software you have, I will provide you with a solution that will disinfect and clean up your PC thoroughly without having to worry about having an Antivirus in the background tempering with our PC.
 
 ## Disabling High Precision Event Timer
 > Recommended step for optimal performance
+
 Open CMD as an admin and type
 
 ```bash
@@ -228,6 +234,7 @@ Every system is different so enabling or disabling will maybe help or not change
 
 ## Intelligent Standby List Cleaner - Helps reduce stuttering in games
 > Recommended step for optimal performance
+
 This will improve latency and memory allocation, it's designed to clean standby RAM that is gathered throughout a gaming or program session, we can clean this standby list to free up RAM, this will help reduce stuttering in games.
 
 * Open CMD as an Admin and type:
@@ -252,6 +259,7 @@ https://www.wagnardsoft.com/forums/viewtopic.php?t=1256
 
 ## CPU Un-parking - Bitsum Park Control (Not recommended for laptops as this will use more energy)
 > Recommended step for optimal performance
+
 Unparks your CPU so you'll use more of it than half of it as Windows is parking cores to save in energy, this decreases performance and we don't want that. You can comfortably use their **Bitsum High-Performance** configuration inside the program.
 
 * Download here: https://bitsum.com/parkcontrol/
@@ -265,6 +273,7 @@ Hit "Apply" when doing changes and "Make Active" to apply the power plan.
 
 ## Windows 10 Game Mode
 > Not Recommended step for optimal performance
+
 Microsoft introduced "Game Mode" with Windows 10 creators update, which is meant to help optimize your PC's gaming performance, you can use it if you don't want to be bothered by anything Windows-related like Windows Update (even though we tweaked it when applying the Debloater scripts)
 
 Though, it has been reported in various places that this optimization can be hurt performance in games and Twitch Streaming (OBS, Xsplit, Streamlabs) and cause fps drops during sessions.
@@ -274,6 +283,7 @@ Though, it has been reported in various places that this optimization can be hur
 
 ## NVIDIA Inspector and CUDA P2 State (For NVIDIA Only)
 > Recommended step for optimal performance and VISUAL corrections!
+
 NVIDIA Inspector is an application that reads out driver and hardware information for NVIDIA cards, it also allows you to tinker with settings that are not present in the NVIDIA Control Panel.
 
 What we are going to do in this section is disable CUDA P2 State, it's practically a Power saving feature for CUDA compute workloads for rendering, deep learning, mining, etc. **In result, it lowers memory clock accordingly** to save on energy, this causes instability in some cases.
@@ -323,6 +333,7 @@ More on that here: https://blurbusters.com/gsync/gsync101-input-lag-tests-and-se
 After you're done applying these settings, hit "Apply Changes" at the top right corner, and save the profile (You'll see an icon of an arrow pointing upwards, click on "Export Profile" and save it where you can Import it when you update your drivers)
 
 ## Setting Affinity for NVIDIA Drivers to improve latency
+> Recommended step for LATENCY performance! It really helps :D
 
 Windows uses almost every driver including GPU drivers to Core 0 on your computer, you can gradually improve latency making your mouse and tasks feel snappier by assigning your GPU to the 4th Core if you have an 8 cores system, or to the 4th core if you have a 4 cores system, or if you have 8 and 16 threads core system then the 5th core (8 and 9).
 
@@ -345,6 +356,7 @@ Download Here: https://drive.google.com/file/d/11wY-o8Q8SB1awuQWjHamC7uJMLH63tr2
 
 ## Enabling XMP Profile
 > Recommended step for optimal performance! Reduces stuttering in games
+
 XMP stands for "Extreme Memory Profiles", it's an Intel technology that allows you to change the memory settings to the manufacturer Overclocked settings to run your RAM at its optimal performance.
 
 It can solve slowdowns, give you more FPS and it's a setting that many forget to enable, so why not?
@@ -358,6 +370,7 @@ And you're done! Save and Exit :)
 
 ## Pagefile setup - Helps with "Running out of Memory"
 > Recommended step for optimal performance
+
 To put it short, it's a way to provide your computer to perform smoothly by reducing the workload of the physical memory, so at times when you have "running out of memory", then it's maybe because of Pagefile, you can read more about it online but we're going to just simplify it.
 
 If you have an SSD and an HDD or SSD with an SSD, make sure Local C is set to "System Managed" and your HDD to "No Paging file"
@@ -378,6 +391,7 @@ If you have an SSD and an HDD or SSD with an SSD, make sure Local C is set to "S
 
 ## TRONScript
 > Not a Recommended step for optimal performance but useful!
+
 First of all, I fell in love with this project and all credits to its makers, you can read about it more in their Reddit page here:
 
 https://www.reddit.com/r/TronScript/comments/g80580/tron_v1110_20200425_remove_malwarebytes/
@@ -392,6 +406,7 @@ Sounds good? **Remember, running it will take time when it starts you need to le
 
 ## Startup Programs - Helps with booting times
 > Recommended step for BOOT times
+
 Yeah, you could go inside your Task Manager and then "Startup" and disable all startup programs that you don't need, but there are also a few regedit settings you can do, as an Advanced to cease startup programs that might not appear in the "Startup" tab of Task Manager.
 
 > **Remember to EXPORT your regedit BEFORE changing these settings to revert mistakes, Click on "File" and then Export**
