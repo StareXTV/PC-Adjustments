@@ -94,7 +94,8 @@ cd .. - Backs out of a folder
 cd foldername - enters a foldername
 ```
 
-```bash ls - views the content of the folder
+```bash
+ls - views the content of the folder
 ```
 
 Go inside the scripts folder by typing cd .\scripts\
