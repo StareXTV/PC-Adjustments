@@ -214,7 +214,13 @@ Open CMD as an admin and type
 
 If it doesn't work then:
 
-- **bcdedit /set useplatformclock false** - You can confirm it by typing **bcdedit /enum** in CMD.
+```bash
+bcdedit /set useplatformclock false
+```
+You can confirm it by typing in CMD:
+```bash
+bcdedit /enum
+```
 
 Then press **Windows Key + R** together launching the Run program, and type in **devmgmt.msc**
 
@@ -230,7 +236,9 @@ This will improve latency and memory allocation, it's designed to clean standby 
 
 First, open CMD as an admin and type this:
 
-- **bcdedit /set useplatformtick yes**
+```bash
+bcdedit /set useplatformtick yes
+```
 
 Then download and unzip the following: 
 
