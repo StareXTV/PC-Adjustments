@@ -314,22 +314,17 @@ Additional settings that might help with Visuals and performance are the followi
   * Make sure to go into your NVIDIA Control Panel and enable "Low Latency Mode" to Ultra after applying these changes.
 * After applying these settings make sure you have also enabled an FPS Limiter -3 off your Refresh Rate.
 * So if you have a 144Hz GSYNC Display put 141fps in your limiter. (Riva-Tuner Statistics Server is recommended)
+More on that here: https://blurbusters.com/gsync/gsync101-input-lag-tests-and-settings/
 
 #### For non-GSYNC/Adaptive sync/Freesync users:
 
-**Frame Rate Limiter Mode:** Limiter V2 - Force Off [Enables Limiter V1 (Less Input Lag)]
-
-**Prefered Refreshrate**: Highest Available
-
-**Vertical Sync**: Force off
-
-**Anisotropic filtering mode** - User-defined / Off
-
-**Anisotropic filtering setting** - 16x
-
-**Power Management Mode** - Prefer Maximum Performance
-
-**Threaded Optimization** - On
+* **Frame Rate Limiter Mode:** Limiter V2 - Force Off [Enables Limiter V1 (Less Input Lag)]
+* **Prefered Refreshrate**: Highest Available
+* **Vertical Sync**: Force off
+* **Anisotropic filtering mode** - User-defined / Off
+* **Anisotropic filtering setting** - 16x
+* **Power Management Mode** - Prefer Maximum Performance
+* **Threaded Optimization** - On
 
 After you're done applying these settings, hit "Apply Changes" at the top right corner, and save the profile (You'll see an icon of an arrow pointing upwards, click on "Export Profile" and save it where you can Import it when you update your drivers)
 
@@ -341,15 +336,17 @@ I own an 8 Core and 16 Threads CPU
 
 Download Here: https://drive.google.com/file/d/11wY-o8Q8SB1awuQWjHamC7uJMLH63tr2/view
 
-Run it as an admin, look for your NVIDIA card, you'll be met with an error so ignore it.
-
-Press "Set Mask", and you'll see "Core 0 1 2 3 4 5 6 7 8" etc, I set it to 8 and 9.
-
-Core 0 & 1 are the first **core**, Core 2 and 3 are the **2nd core**, Core 4 and 5 are the **3rd core**, Core 6 and 7 are the 4th **core**, Core 8 and 9 are the 5th **core** and so on. (**IF Hyper-Threading is Enabled**)
-
-Now press OK and OK when it asks you to restart the device, your monitor will go black and then you'll see your screen again.
-
-This alone improved my latency by a lot!
+* Run the Interrupt Affinity Policy Tool as an Admin
+* Look for your NVIDIA card, you'll be met with an error so ignore it.
+* Press "Set Mask", and you'll see "Core 0 1 2 3 4 5 6 7 8" etc, I set it to 8 and 9.
+  * Core 0 & 1 are the first **core**
+  * Core 2 and 3 are the **2nd core**
+  * Core 4 and 5 are the **3rd core**
+  * Core 6 and 7 are the 4th **core**
+  * Core 8 and 9 are the 5th **core** and so on
+  (**IF Hyper-Threading is Enabled, if Disabled then Core 0 is 1, Core 1 is 2 and etc**)
+* It will ask you to restart your device, press OK, your monitor will go black and then you'll see your screen again.
+**This alone improved my latency by a lot!**
 
 ## Enabling XMP Profile
 
