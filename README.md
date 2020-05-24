@@ -24,7 +24,7 @@ Good question, If you bought your computer recently, you may have come across th
 
 UEFI gradually replaces traditional BIOS on most PCs, it includes greater security features than legacy and also boots faster, and noticeable performance improvement.
 
-### Check if you're on Legacy or UEFI
+## Check if you're on Legacy or UEFI
 
 You can check if you're on Legacy or UEFI via **System Information**
 
@@ -37,7 +37,7 @@ Type in: **msinfo32.exe**
 Then look for **BIOS Mode**, there you'll see **UEFI** or **Legacy**.
 
 
-### How to setup UEFI Boot up for Windows 10?
+## How to setup UEFI Boot up for Windows 10?
 
 Disclaimer: You should not do this unless you're formatting your PC, you can look up ways to convert a drive from MBR to GPT online, we won't be dwelling into this because of complications that may occur. Do it at your own risk
 
@@ -46,19 +46,16 @@ Read here: [Convert my drive](https://docs.microsoft.com/en-us/windows-hardware/
 When you restart/start your computer you will be greeted with your **Motherboard Splashscreen**
 <img src="https://www.tonymacx86.com/attachments/camerazoom-20150316194843548-jpg.130619/" alt="Stuck on Gigabyte Startup Screen | tonymacx86.com" style="zoom:50%;" />
 
-**Enter your BIOS is, Pressing the DEL button OR F1, F2, F10, Esc, or in really older machines Ctrl+Alt+Esc or Ctrl+Alt+Delete**
+**Enter your BIOS, Pressing the DEL button OR F1, F2, F10, Esc, or in really older machines Ctrl+Alt+Esc or Ctrl+Alt+Delete**
 
 Make sure you have "CSM Support" (Stands for Compatibility Support Module) disabled * **Can improve booting times too**
 
 And then go inside the **Boot** section of your motherboard, there you'll see your USB thumb drive.
 
-**Make sure you select the "UEFI: USB Thumb drive name"** and not something like "P1: USB Thumb drive name" and begin installing Windows 10.
-
+Make sure you select the "UEFI: USB Thumb drive name" and not something like "P1: USB Thumb drive name" and begin installing Windows 10.
 
 
 **In the Windows 10 Installation, make sure you Delete the partition you want to install Windows on, recommended on an [SSD](https://www.youtube.com/watch?v=YQEjGKYXjw8) then "New" and let it work, proceed to install Windows 10 on this partition after it's done.**
-
-
 
 # After setting up Windows 10, Debloating & Programs
 
