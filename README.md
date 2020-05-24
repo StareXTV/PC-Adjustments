@@ -210,7 +210,9 @@ To uninstall any Antivirus software you have, I will provide you with a solution
 
 Open CMD as an admin and type
 
-- **bcdedit /deletevalue useplatformclock**
+```bash
+bcdedit /deletevalue useplatformclock
+```
 
 If it doesn't work then:
 
