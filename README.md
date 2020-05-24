@@ -217,15 +217,16 @@ If it doesn't work then:
 ```bash
 bcdedit /set useplatformclock false
 ```
-You can confirm it by typing in CMD:
+You can confirm it by typing in CMD and look for useplatformclock:
 ```bash
 bcdedit /enum
 ```
 
-Then press **Windows Key + R** together launching the Run program, and type in **devmgmt.msc**
-
-Inside Device Manager click on "View", then tick **Devices by connection** and tick **Show Hidden Devices** -> Look for High precision event timer -> Disable device, for me it was inside **Microsoft ACPI-Compliant System -> PCI Express Root Complex**
-
+* Press **Windows Key + R** together launching the Run program, and type in **devmgmt.msc**
+ * Inside Device Manager click on "View" and look for **Devices by connection**
+ * Click "View" again and click on **Show Hidden Devices** 
+ * Look for **High precision event timer** in the Devices list
+ * Once you find HPET, Disable the device, for me it was inside **Microsoft ACPI-Compliant System -> PCI Express Root Complex**
 Every system is different so enabling or disabling will maybe help or not change anything at all, it's said that if you have an older CPU, then it might not benefit you to disable it, if you own a very fast CPU then you might see 10fps or more improvement when it's disabled.
 
 **You must reboot after applying this setting, but can continue with ISLC down below**
