@@ -38,7 +38,7 @@ Then look for **BIOS Mode**, there you'll see **UEFI** or **Legacy**.
 
 ## How to setup UEFI Boot up for Windows 10?
 
-> Disclaimer: You should not do this unless you're formatting your PC, you can look up ways to convert a drive from MBR to GPT online, we won't be dwelling into this because of complications that may occur. Do it at your own risk
+> Disclaimer: **You should not do this unless you're formatting your PC**, you can look up ways to convert a drive from MBR to GPT online, we won't be dwelling into this because of complications that may occur. **Do it at your own risk**
 
 Read here: [Convert my drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-installing-using-the-mbr-or-gpt-partition-style)
 
