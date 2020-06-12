@@ -13,7 +13,7 @@ The recommended method to install Windows 10 is via the Microsoft website, avoid
 [Download the Media Tool Creation](https://www.microsoft.com/en-us/software-download/windows10)
 Press **Download tool now**, and run the installation media.
 
-We recommend you use a USB Thumb drive and **format** it to **NTFS** and prepare it with the installation files, select to prepare a Windows 10 **Pro** 64bit - **We recommend running 64bit for users that have over 4GB of RAM, otherwise select 32bit if your PC is older than the year 2000**
+We recommend you use a USB Thumb drive and **format** it to **NTFS** and prepare it with the installation files, select to prepare a Windows 10 **Pro** 64bit - **We recommend running 64bit for users that have over 4GB of RAM, otherwise select 32bit if your processor doesn't support 64bit**
 
 [What is the difference? 34bit vs 64bit](https://www.pcmag.com/news/32-bit-vs-64-bit-oses-whats-the-difference)
 
